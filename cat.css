@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkHRl5mig14_M-ikf4HgfKpOTlfofbj7W7sQ&usqp=CAU);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    border: rgba(255, 255, 255, 0.3) 1px solid ;
+    backdrop-filter: blur(3px);
+    height: 90vh;
+    min-width: 50%;
+    gap: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    background: rgb(75, 143, 204);
+
+}
