@@ -1,6 +1,6 @@
 const container = document.querySelector('.container')
 const title = document.querySelector('h1')
-title.innerText = 'Chargement...'
+// title.innerText = 'Chargement...'
 const img = document.querySelector('img')
     img.hidden = true
 const btn = document.querySelector('button')
@@ -17,8 +17,8 @@ btn.addEventListener('click', event => {
         return r.json()
     })
     .then(data => {
-        title.innerText = 'Chargement terminé !'
         img.src = data[0].url
+        title.innerText = 'Chargement terminé !'
         btn.style.filter = 'brightness(1)'
 
     });

@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkHRl5mig14_M-ikf4HgfKpOTlfofbj7W7sQ&usqp=CAU);
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,25 +21,40 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.106);
     border-radius: 40px;
     border: rgba(255, 255, 255, 0.3) 1px solid ;
     backdrop-filter: blur(3px);
     height: 90vh;
     min-width: 50%;
     gap: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 img{
     width: 500px;
     height: 500px;
     object-fit: cover;
+    border: rgba(255, 255, 255, 0.3) 1px solid ;
+    border-radius: 20px;
+
 }
 
 button {
+    border: none;
     width: 400px;
     height: 50px;
-    background: rgb(75, 143, 204);
+    background: lightseagreen;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
 
+}
+
+button:hover{
+    opacity: .5;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
 }
